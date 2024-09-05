@@ -7,7 +7,7 @@ body{
     text-align: center;
     padding-top: 120px;
     font-size: 60px;
-    background-image: url(content.jpg);
+    background-image: url(../images/content.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;

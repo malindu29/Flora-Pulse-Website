@@ -96,7 +96,7 @@ a:hover{
     height: 500px; 
     border-radius: 50%; /* make it a circle */
     transform: translate(0%, 60%); /* Moves the circle to the left bottom */
-    background-image: url(myself.jpg);
+    background-image: url(../images/myself.jpg);
     background-position:top;
     border-style:dashed;
     border-color: rgb(255, 255, 255);

@@ -23,57 +23,57 @@ const ItemData= [
       name:"Water Bottle",
       price:300,
       desc:"This stylish bamboo bottle is a  sleek alternative to plastic.",
-      img:"bamboo.jpeg"
+      img:"../images/bamboo.jpeg"
   },{
     id:1,
     name:"Eco Gift Pack",
     price:500,
     desc:"This eco-friendly budget pack satisfies all your hygiene needs",
-    img:"eco gift pack.jpg"
+    img:"../images/eco gift pack.jpg"
   },{
       id:2,
       name:"Zero-Waste bag",
       price:400,
       desc:" These reusable fabric totes help cut back on harmful waste.",
-      img:"bags.jpg",
+      img:"../images/bags.jpg",
 
   },{
       id:3,
       name:"Oceanic Earrings",
       price:150,
       desc:"Eco-friendly,blue-color earrings crafted from sustainable seashells.",
-      img:"ear.jpg"
+      img:"../images/ear.jpg"
   },{
       id:4,
       name:"Skin-Care Pack",
       price:700,
       desc:"Green beauty essentials embedded with sustainable packaging",
-      img:"skin care.jpg"
+      img:"../images/skin care.jpg"
   },{
     id:5,
     name:"Bowls & spoons",
     price:300,
     desc:"Nature friendly kitchen essentials made from Coconut shells",
-    img:"spoons.jpg"
+    img:"../images/spoons.jpg"
   },{
       id:6, 
       name:"Eco-Hoodie Wear",
       price:600,
       desc:"Eco-conscious, pink & free size hoodie- style meets sustainability",
-      img:"hoodies.jpg",
+      img:"../images/hoodies.jpg",
 
   },{
     id:7,
     name:"Home-Deco Item",
     price:390,
     desc:"Hand-crafted made with pure wood, home decoration piece",
-    img:"wood.jpg"
+    img:"../images/wood.jpg"
   },{
   id:8,
   name:"Trash Bin",
   price:350,
   desc:"Vintage style waste paper trash bin -Environmental-friendly",
-  img:"trash.jpg"
+  img:"../images/trash.jpg"
   }
 ];
 

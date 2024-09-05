@@ -24,7 +24,7 @@ body{
     align-items: center;
     justify-items: center;
     background-color: black;
-    background-image: url(checkimg4.jpg);
+    background-image: url(../images/checkimg4.jpg);
     background-size:contain;
 } 
 
