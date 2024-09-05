@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Eco Store Checkout</title>
+</head>
+<body>
+    
+    
+
+    
+    <div class="Checkout">
+        <h1>Order Summary</h1>
+
+        <div class="TotalPrice">
+            Total Price  <p class="totalPrice">Rs.0</p>
+        </div>
+        
+        <form name="form" >
+
+            <fieldset class="twofieldsets">
+                
+                <legend>Payment Details</legend>
+                <label for ="name">Full Name</label>
+                <input type="text" name="fName" id="name" class="inputs" placeholder="Ex.Y M Liyanage">
+
+                <label for ="email">Email</label>
+                <input type="text" name="email" id="email" class="inputs" placeholder="Ex.123@gmail.com">
+
+                <label for ="address">Address</label>
+                <input type="text" name="address" id="address" class="inputs" placeholder="No.32,Nawinna,Maharagama">
+
+                <label for ="district">District</label>
+                <input type="text" name="district" id="district" class="inputs" placeholder="Ex.Colombo">
+                
+                <label for ="zip">ZIP Code</label>
+                <input type="text" name="zip" id="zip" class="inputs" placeholder="Ex.12400">
+            </fieldset>
+            
+            <fieldset class="twofieldsets" >
+                   
+                <legend>Card Details</legend>
+                <label >Accepted Cards</label>
+
+                <div class="cardType" id="cardType">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                </div>
+                
+                <label for ="cName">Name on Card</label>
+                <input type="text" name="cName" id="cName" class="inputs" placeholder="Ex. Y M Liyanage">
+                
+                <label for ="cNumber">Card Number</label>
+                <input type="text" name="cNumber" id="cNumber" class="inputs" placeholder="000000000000000" >
+
+                <label for ="cExDate">Expiry Date</label>
+                <input type="text" name="cExDate" id="cExDate" class="inputs" placeholder="MM-YY" >
+
+                <label for ="CVV">CVV</label>
+                <input type="text" name="CVV" id="CVV" class="inputs" placeholder="Ex.1234">
+            </fieldset>
+        </form>
+
+        <div class="purchase-btn" onclick="required()">
+            <button>Purchase</button>
+        </div>
+
+        <!-- Link back to shop page -->
+        <div class="back-to-shop">
+            <a href="shop.html"> <button>Continue Shop  </button>  </a>
+        </div>
+
+        
+    </div>
+    
+    <script>
+
+    const totalPriceData = JSON.parse(localStorage.getItem("Total"))
+    const TotalPrice = document.querySelector(".TotalPrice");
+
+
+    TotalPrice.innerHTML = `Total Price ${totalPriceData.toFixed(2)}`;
+
+
+    var username = localStorage.getItem("username");
+    var email = localStorage.getItem("email");
+
+    document.getElementById("name").value = username;
+    document.getElementById("email").value = email;
+
+
+        function required(){
+            var fname = document.forms["form"]["fName"].value;
+            var email = document.forms["form"]["email"].value;
+            var address = document.forms["form"]["address"].value;
+            var district = document.forms["form"]["district"].value;
+            var zip = document.forms["form"]["zip"].value;
+            var cName = document.forms["form"]["cName"].value;
+            var cNumber = document.forms["form"]["cNumber"].value;
+            var cExDate = document.forms["form"]["cExDate"].value;
+            var CVV = document.forms["form"]["CVV"].value;
+
+            // validating full name
+            if (fname == "")
+            {
+            alert("Please enter your full name");
+            return false;
+            }
+            
+            if (email == "")
+            {
+            alert("Please enter Email");
+            return false;
+            }
+
+            if (address == "")
+            {
+            alert("Please enter Address");
+            return false;
+            }
+            
+
+            if (district == "")
+            {
+            alert("Please enter District");
+            return false;
+            }
+            
+            if (zip == "")
+            {
+            alert("Please enter ZIP Code");
+            return false;
+            }
+
+            if (cName == "")
+            {
+            alert("Please enter the name which is on the card");
+            return false;
+            }
+
+            if (cNumber == "")
+            {
+            alert("Please enter the  card number");
+            return false;
+            }
+
+            if (cExDate == "" )
+            {
+            alert("Please enter your card's expiration date");
+            return false;
+            }
+
+            if (CVV == "")
+            {
+            alert("Please enter the CVV which is on the back of your card");
+            return false;
+            }
+
+            if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)))
+            {
+            alert("Please enter your email in correct format");
+            return false;
+            }
+
+            
+
+
+            if (isNaN(zip) )
+            {
+            alert("Please input correct ZIP Code with only Numbers");
+            return false;
+            }
+
+            if ((isNaN(cNumber)) ||  cNumber.length!==16)
+            {
+            alert("Please input Correct Card Number");
+            return false;
+            }
+
+            
+            
+            else 
+            {
+            alert('Your Order Has Been Placed. Thank You For Purchasing From Our Shop');
+            window.location.href = "Shop.html";
+            return true; 
+            }
+
+        };
+
+        // Clearing local storage
+        localStorage.clear();
+
+    </script>
+
+    
+</body>
+</html>

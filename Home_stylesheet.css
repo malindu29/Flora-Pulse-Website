@@ -1,0 +1,80 @@
+section{
+    padding: 200px 100px;  
+}
+/* image slides */
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.home .content{
+    z-index: 888;
+    width: 70%;
+    margin-top: 50px;
+    color: aliceblue;
+
+}
+.home .content h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+.home .content h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.home img{
+    z-index: 000;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* button of slides */
+.slid-nav{
+    z-index: 888;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(80px);
+    margin-bottom: 12px;
+    padding-top: 50px;
+}
+.slid-nav .slid-btn{
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(225, 225, 225, 0.5);
+    transition: 0.3s ease;
+}
+.slid-nav .slid-btn.active{
+    background: #2bab0d;
+}
+.slid-nav .slid-btn:not(:last-child){
+    margin-right: 20px;
+}
+.img-slid{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 0 50%);
+}
+.img-slid.active{
+    clip-path: circle(150% at 0 50%);
+}
+@media(max-width: 1040px){
+    section{
+        padding: 200px 100px;  
+    }
+    
+}

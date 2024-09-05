@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 3px 3px 5px black; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes transitionPage {
+
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+
+}
+
+body {
+    background-color:black;
+    background-image: url("../images/editorimg.avif");
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 720px;
+    animation: transitionPage 1s;
+}
+
+
+.taskList {
+    float: right;
+    padding: 20px;
+    background-color:  rgb(205, 233, 249);
+    color: black;
+    width: 50%;
+    margin-right: 50px;
+    border-radius: 20px;
+}
+
+.taskList h2{
+    font-size: 30px;
+    padding-left: 20px;
+}
+
+.editor {
+    padding: 30px;
+    background-color: rgb(205, 233, 249);
+    color: #070707; 
+    width: fit-content;
+    border-radius: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.editor h1{
+    padding-bottom: 20px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+.ul{
+    list-style-type: none;
+}
+
+.li{
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(7, 0, 0);
+}
+
+a:hover{
+    text-decoration: underline;
+}
+.circle {
+    width: 500px; 
+    height: 500px; 
+    border-radius: 50%; /* make it a circle */
+    transform: translate(0%, 60%); /* Moves the circle to the left bottom */
+    background-image: url(myself.jpg);
+    background-position:top;
+    border-style:dashed;
+    border-color: rgb(255, 255, 255);
+    animation: pulseBorder 1s infinite alternate; /* Add animation to the border */
+}
+
+@keyframes pulseBorder {
+    0% {
+        border-width: 5px;
+    }
+    100% {
+        border-width: 7px;
+    }
+}
+

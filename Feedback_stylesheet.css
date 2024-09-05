@@ -1,0 +1,87 @@
+.feedback{
+    width: 100%;
+    padding: 150px;
+    height: 100%;
+    background-color: aliceblue;
+    
+}
+form{
+    padding: 50px;
+    border-radius: 5px;
+    border-radius: 25px;
+    color: black;
+}
+h1{
+    color: green;
+    margin: 0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+    word-spacing: 30px;
+    letter-spacing: 3px;
+}
+/* radio button */
+.sub-btn{
+    display: inline-flex;
+    
+}    
+
+label{
+    display: block;
+    margin: 20px 0;
+    width: 50%;
+    
+}
+/* message text area */
+input, textarea{
+    border: 2px solid #2bab0d;
+    padding: 20px;
+    width: 50%;
+    margin-left:  40px;
+    border-radius: 25px;
+    background: transparent;
+    color: aliceblue;
+    outline: none;
+    font-size: 15px;
+    text-align: left;
+    color: black;
+    resize: none;
+    
+}
+
+small{
+    display: block;
+    margin-left: 40px;
+}
+/* preview button, submit button */
+button{
+    margin-top: 40px;
+    max-width: 100px;
+    background: #2bab0d;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 25px;  
+    justify-content: end; 
+    margin-inline: 30px;
+}
+  /* error message */
+.error{
+    color: rgb(183, 0, 0);
+    
+}
+.error-border{
+    border: 1px solid red;
+}
+
+@media(max-width: 1040px){
+    .feedback{
+        width: 120%;
+    }
+    
+    .sub-btn{
+        width: 20%;
+        
+    }
+}

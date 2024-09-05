@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+  }
+  
+  html {
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color:black;
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    padding:10px; 
+    align-items: center;
+    justify-items: center;
+    background-color: black;
+    background-image: url(checkimg4.jpg);
+    background-size:contain;
+} 
+
+.Checkout{
+    
+    display: flex;
+    flex-direction: column;
+    height: 750px;
+    width: 700px;
+   /* background-color: silver;*/
+   /*background-color: rgb(85, 123, 85);*/
+    background-color: rgb(161, 197, 161);
+    display: flex;
+    margin:50px;
+   /* border: 5px solid #adb5bd;*/
+    border-radius: 5px;
+    padding:20px
+
+}
+
+
+  
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+
+.inputs{
+    height: 20px;
+    width: 40%;
+    
+}
+
+.cardType{
+    display: flex;
+    margin-left: 5px;
+    gap: 10px;
+    width: 41%; 
+}
+
+  
+
+.twofieldsets{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+legend{
+    font:bold;
+}
+
+.place-order{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+ 
+}
+
+button{
+    width: 100px;
+    height: 25px;
+}
+
+i{
+    width: 15px;
+    height: 10px;
+}
+
+ 
+
+.purchase-btn button:hover {
+    background-color: #a5dcf3; /* light blue when hovered over */
+} 
+

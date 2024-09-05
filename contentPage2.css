@@ -1,0 +1,21 @@
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+}
+.heading{
+    text-align: center;
+    padding-top: 120px;
+    font-size: 60px;
+    background-image: url(content.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+.article.p{
+    text-align: center;
+    font-size: large;
+}

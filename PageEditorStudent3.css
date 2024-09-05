@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 200px;
+}
+.hero-section .left,.hero-section .right{
+    width: 50%;
+}
+
+.left h1{
+    font-size: 45px;
+    padding-top: 180px;
+}
+.left h1 span{
+    color: #30cbd0;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    font-family:  Garamond, serif;
+}
+.left h2 span{
+    padding-left: 20px;
+    color:whitesmoke;
+    font-family: monospace;
+    font-size: 25px;
+}
+.left h3 span{
+    padding-left: 20px;
+    font-family: monospace;
+    color: chartreuse;
+}
+.left p, .contentpage{
+    color:white;
+}
+.right img{
+    width: 80%;
+    height: 80%;
+    padding-top: 20%;
+    padding-left: 160px;
+}
+.team, .profile {
+    color: white;
+}
+.name{
+    color: bisque;
+    padding-left: 20px;
+    font-family:  Garamond, serif;
+}

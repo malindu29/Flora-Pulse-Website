@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image/png" href="../images/logo.jpg">
+    <link rel="stylesheet" href="Shared_stylesheet.css">
+    <link rel="stylesheet" href="gallery.css">
+    
+</head>
+<body>
+
+    <header>
+
+        <!-- *********************** Navigation bar *********************** -->
+            <div class="logo"><img src="../images/logo.jpg" alt="logo"></div>
+            <div class="nav-bar">
+                <div class="nav-items">
+                    <a href="home.html"><i class="fa fa-home"></i>Home</a>
+                    <a href="gallery.html" class="active"><i class="fa fa-camera"></i>Gallery</a>
+                    <a href="shop.html"><i class="fa fa-shopping-bag"></i>Shop</a>
+                    <a href="profile.html"><i class="fa fa-user"></i>User Profile</a>
+                    <a href="feedback.html"><i class="fa fa-commenting"></i>Feedback</a>
+                    <a href="sitemap.html"><i class="fa fa-sitemap"></i>Sitemap</a>
+                    <a href="team.html"><i class="fa fa-users"></i>About us</a>
+                </div>
+            </div>
+            <div class="menu-bar"><i class="fa fa-bars"></i></div>
+    
+        <!-- *********************** End of the navigation bar *********************** -->
+    
+    </header>
+
+    <!-- *********************** Page heading *********************** -->
+    <div class="heading">
+        <div class="headingText">
+            <h1>GALLERY</h1>
+        </div>
+    </div>
+
+    <!-- *********************** Font size and background colour change *********************** -->
+    <div class="change">
+        <div class="font">
+            <label for="color">Font Size</label>
+            <button id="button1" onclick="fontChange(12)">-</button>
+            <button id="button2" onclick="fontChange(16)">0</button>
+            <button id="button3" onclick="fontChange(20)">+</button>
+        </div>
+
+        <div class="color">
+            <form>
+                <label for="color">Background Colour</label>
+                <select name="Colour" id="color" onchange="backgroundchange(this);">
+                    <option value="#000000" selected>Defualt</option>
+                    <option value="#CD5C5C">Indian Red</option>
+                    <option value="#17A589">Mountain Meadow</option>
+                    <option value="#8917A5">Dark Magenta</option>
+                    <option value="#1789A5">Eastern Blue</option>
+                    <option value="#FF69B4">Hot Pink</option>
+                    
+                </select>
+            </form>
+        </div>
+    </div>
+    
+    <!-- *********************** Gallery images and their descriptions *********************** -->
+    <div class="thumbnails">
+        <div class="imageContainer">
+            <h2>Flora Pulse Gallery</h2>
+            <div class="image">
+                <img id="picture1" src="../images/image_42.jpg" alt="Land Rehabilitation" onclick="display(this);">
+                <div id="pic1Para">
+                    <h3>Land Rehabilitation</h3>
+                    <p>Land rehabilitation involves restoring degraded land to its natural state, ensuring safety for wildlife, plants, and humans. It addresses
+                       damage caused by human activities like agriculture or industry. Unlike land reclamation, which alters ecosystems for cultivation or
+                       construction, land rehabilitation focuses on restoring existing land. <br><br> 
+                       <a class="links" href="https://www.investopedia.com/terms/l/landrehabilitation.asp" target="_blank">Read More</a> </p>
+                </div>
+            </div>            
+            
+            <div class="image">
+                <img id="picture2" src="../images/image_57.jpg" alt="Amphibian" onclick="display(this);">
+                <div id="pic2Para">
+                    <h3>Amphibians</h3>
+                    <p>Amphibians are small vertebrates that require water or a moist environment to survive. They include frogs, toads, salamanders, and newts,
+                       all of which breathe and absorb water through their thin skin. Amphibian extinction is a critical concern due to habitat loss, pollution,
+                       climate change, and disease. Over half of all frog species are endangered, with habitat disturbance and contamination being significant
+                       threats. Their sensitivity to environmental changes makes them vulnerable, emphasizing the urgent need for conservation efforts to prevent
+                       further decline. <br><br> <a class="links" href="https://www.nbcnews.com/science/environment/2000-species-amphibians-are-threatened-extinction-rcna11861" target="_blank">Read More</a></p>
+                </div>
+            </div>            
+            
+            <div class="image">
+                <img id="picture3" src="../images/image_34.jpg" alt="Protect terrestrial ecosystems" onclick="display(this);">
+                <div id="pic3Para">
+                    <h3>Protect Terrestrial Ecosystems</h3>
+                    <p>Protecting terrestrial ecosystems is crucial for preserving biodiversity, supporting ecological balance, and safeguarding vital ecosystem
+                        services such as clean air and water. Conservation efforts focus on habitat preservation, sustainable land management practices, combating
+                        deforestation, and mitigating the impacts of climate change. Additionally, community engagement and awareness-raising play key roles in
+                        fostering a collective commitment to the protection of terrestrial ecosystems for the benefit of both present and future generations.
+                        <br><br> <a class="links" href="https://www.lamborghini.com/en-en/models/huracan/huracan-sterrato" target="_blank">Read More</a></p>
+                </div>
+            </div>
+        </div>  
+
+        <!-- *********************** To show image and the hidden description when hovering  *********************** -->
+        <div class="largeImage">
+            <div id="description" ></div>
+            <img id="expandedImage" src="#" alt="Large Image">
+        </div>  
+        
+        <!-- *********************** Gallery images and their descriptions *********************** -->
+        <div class="imageContainer">
+            <div class="image">
+                <img id="picture4" src="../images/image_54.jpg" alt="Biodiversity conservation" onclick="display(this);">
+                <div id="pic4Para">
+                    <h3>Biodiversity Conservation</h3>
+                    <p>Biodiversity conservation aims to safeguard the variety of life on Earth, including species, genes, and ecosystems. It involves protecting
+                        habitats, preventing species extinction, promoting sustainable resource management, and engaging communities in conservation efforts. By
+                        preserving biodiversity, we maintain ecosystem health, resilience, and the provision of essential ecosystem services that support human
+                        well-being and the health of the planet. <br><br> <a class="links" href="https://www.undp.org/nature/our-work-areas/biodiversity-conservation" target="_blank">Read More</a></p>
+                </div>
+            </div> 
+
+            <div class="image">
+                <img id="picture5" src="../images/image_44.jpg" alt="Desertification Prevention" onclick="display(this);">
+                <div id="pic5Para">
+                    <h3>Desertification Prevention</h3>
+                    <p>Preventing desertification involves implementing sustainable land management practices, such as afforestation, reforestation,
+                        and soil conservation measures, to combat soil degradation and desert encroachment. Integrated approaches that involve local
+                        communities and stakeholders are essential for restoring degraded land, promoting sustainable agriculture, and mitigating the 
+                        impacts of climate change in arid and semi-arid regions. By addressing the root causes of desertification and fostering resilience
+                        in vulnerable ecosystems, we can work towards preserving biodiversity and ensuring the long-term viability of these landscapes.
+                        <br><br> <a class="links" href="https://www.green.earth/blog/preventing-desertification-top-5-success-stories" target="_blank">Read More</a></p>
+                </div>
+            </div>
+            
+            <div class="image">
+                <img id="picture6" src="../images/image_69.jpg" alt="Sustainable Agriculture" onclick="display(this);">
+                <div id="pic6Para">
+                    <h3>Sustainable Agriculture</h3>
+                    <p>Sustainable agriculture aims to meet the current needs for food production while preserving natural resources and ecosystems for
+                        future generations. It involves adopting practices that minimize environmental impact, promote biodiversity, conserve soil fertility,
+                        and reduce water usage and pollution. Key components include organic farming, crop rotation, agroforestry, integrated pest management,
+                        and the use of renewable energy sources. By prioritizing long-term environmental and social benefits, sustainable agriculture supports
+                        food security, resilience to climate change, and the well-being of both farmers and consumers.<br><br> <a class="links" 
+                        href="https://sarep.ucdavis.edu/sustainable-ag" target="_blank">Read More</a></p>
+                </div>
+            </div>
+        </div>
+            
+    </div>
+
+    <!-- *********************** Footer *********************** -->
+
+        <footer>
+            <div class="container">
+                <h3>Find us here</h3>
+                <div class="socials">
+                    <a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="http://www.gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="http://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="copyright">
+                    <p>© 2024 FLORA PULSE All right reserved</p>
+                </div>
+                <div class="pe">
+                    <a class="pageEditor" href="pageEditor_4.html">Page editor</a>
+                    <a href="#top"><img id="backTop" src="https://cdn-icons-png.flaticon.com/512/4196/4196777.png" style="height: 30px; width: 30px;" alt="Back to top icon"></a>
+                </div>
+            </div>    
+        </footer>
+    
+    <!-- *********************** End of the footer *********************** -->
+    <script src="shared_script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

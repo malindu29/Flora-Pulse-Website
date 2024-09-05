@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="Shared_stylesheet.css">
+    <link rel="stylesheet" href="team.html">
+    <link rel="stylesheet" href="home.html">
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+                   <!--Navigation Bar-->
+<header>
+    <div class="logo"><img src="../images/download.jpg" alt="logo of life of land"></div>
+    <div class="menu-bar"><i class="fa fa-bars"></i></div>
+    <div class="nav-bar">
+        <div class="nav-items">
+            <a href="home.html" class=""><i class="fa fa-home"></i>Home</a>
+            <a href="gallery.html"><i class="fa fa-camera"></i>Gallery</a>
+            <a href="shop.html"><i class="fa fa-shopping-bag"></i>Shop</a>
+            <a href="profile.html" class="active"><i class="fa fa-user"></i>User Profile</a>
+            <a href="feedback.html"><i class="fa fa-commenting"></i>Feedback</a>
+            <a href="sitemap.html"><i class="fa fa-sitemap"></i>Sitemap</a>
+            <a href="team.html"><i class="fa fa-users"></i>About us</a>
+        </div>
+    </div>
+</header>
+                 <!--Navigatin Bar Close-->
+
+<body>
+    <div class="container">
+        <!-- Welcome Message -->
+        <div class="welcome" id="welcome">
+            <h3>Welcome to Our Page</h3>
+            <button onclick="showQuestions()"> &nbsp;Click Hear&nbsp;</button>
+        </div>
+        <!-- Question Page -->
+        <div id="questionPage" style="display: none;">
+            <!-- Step 1 -->
+            <div class="prompt" id="step1">
+                <h3>STEP 1 : Personal Details</h3>
+                <button onclick="getPersonalDetails()">&nbsp;Enter Personal Details&nbsp;</button>
+            </div>
+            <!-- Step 2 -->
+            <div class="prompt" id="step2" style="display: none;">
+                <h3>STEP 2 : Other Privacy Details </Details></h3>
+                <button onclick="getPreferences()">&nbsp;Other Privacy Details&nbsp;</button>
+            </div>
+            <!-- Step 3 -->
+            <div class="prompt" id="step3" style="display: none;">
+                <h3>STEP 3 : Post Your Comments About Life On Land</h3>
+                <button onclick="getotherdata1()">&nbsp;Enter Commeting&nbsp;</button>
+            </div>
+            <!-- Step 4 -->
+            <div class="prompt" id="step4" style="display: none;">
+                <h3>STEP 4 : Post Your Comments About Life On Land</h3>
+                <button onclick="getotherdata2()">&nbsp;Enter Commeting&nbsp;</button>
+            </div>
+            <div class="output">
+                <div class="progress-bar"></div>
+                <h3>Profile Completed : 0%</h3>
+                <div id="profile-output">
+                    <!-- User input display here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="profile.js"></script>
+<script src="shared_script.js"></script>
+</body>
+
+             <!--Footer Part-->
+<footer>
+    <div class="container">
+        <h2>Find us here</h2>
+        <div class="socials">
+            <a href="http://www.facebook.com"><i class="fab fa-facebook"></i></a>
+            <a href="http://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="http://www.gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="http://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="copyright">
+            <p>© 2024 FLORA PULSE All right reserved</p>
+        </div>
+    </div>
+    <div class="pe">
+        <a class="pageEditor" href="PageEditorStudent3.html">Page editor</a>
+        <a href="#top"><img id="backTop" src="https://cdn-icons-png.flaticon.com/512/4196/4196777.png" style="height: 30px; width: 30px;" alt="Back to top icon"></a>
+    </div>   
+</footer>
+
+</html>

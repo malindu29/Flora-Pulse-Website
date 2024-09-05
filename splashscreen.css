@@ -1,0 +1,204 @@
+
+  
+ 
+
+ /* Set box-sizing property to border-box to include padding and border in the element's total width and height */
+* {
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+
+
+    
+    
+  }
+  
+  /* Set margin and padding of the body element to 0 */
+  body {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    
+  }
+
+  #splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:  url(../images/splash.jpg);
+    color:white;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-size:cover;
+  
+  }
+  
+  
+  .logo  {
+    margin-bottom: 20px;
+   /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */  
+   transition: transform 0.5s ease; /* Adds a transition effect for when ho*/
+    position: absolute; /* Position the logo absolutely within the splash-screen */
+    top: 0px; /* Adjust the top position as needed */
+    left: 0px; /* Adjust the left position as needed */
+    margin-bottom: 20px;
+/* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adds a shadow effect */
+} 
+
+.logo img {
+  animation: logoAnimation 1s linear ;
+}
+
+@keyframes logoAnimation {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+  
+  
+  #content {
+    display: none;
+  }
+  
+  
+  /*Style the heading<h1>*/
+h1 {
+    font-size: 68px; /* Increase the font size */ 
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the heading both horizontally and vertically */
+    font-weight: bolder;
+    font-family: Georgia, serif;
+    white-space: nowrap; /* Prevent the heading from breaking into multiple lines */
+    margin: 0; /* Remove any default margin */ 
+    padding: 0; /* Remove any default padding */ 
+    text-shadow: 0 0 10px #000000, /* Neon glow effect */
+                 0 0 20px #000000,
+                 0 0 30px #000000,
+                 0 0 40px #000000,
+                 0 0 50px #000000,
+                 0 0 60px #000000,
+                 0 0 70px #000000; 
+    -webkit-text-stroke: 2px rgb(255, 255, 255); /* Text outline */
+    -webkit-text-fill-color: transparent; /* Hide original text color */
+    
+}
+
+
+p{
+  color: rgb(249, 249, 249);
+  max-width: 80%; /* Limit the width of the paragraph */ 
+  margin: 20px auto; 
+  text-align: center; /* Center text horizontally */ 
+  bottom:0%;
+  font-weight: bold;
+  top: inherit;
+  font-size:medium;
+  text-shadow: 0 0 10px #ffa2cd, /* Neon glow effect */
+  0 0 20px #ffa2cd,
+  0 0 30px #ffa2cd,
+  0 0 40px #ffa2cd,
+  0 0 50px #ffa2cd,
+  0 0 60px #ffa2cd,
+  0 0 70px #ffa2cd,
+
+}
+
+.student-info {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 20px;
+}
+
+/* Style the student container */
+.student {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin-bottom: 20px; /* Add some space between student items */
+
+}
+
+
+/* Style the student-desc container */
+.student-desc {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  color:whitesmoke;
+  justify-content: center;
+  text-align: center;
+} 
+  
+  /* Style the student-name heading */
+  .student-name {
+    font-size: 20px;
+/* margin: 0;*/
+   /* margin-bottom: 30px; */
+    bottom: 0px; /* Adjust the bottom position as needed */
+    margin-left: 10%; /* Move the spinner to the center horizontally */
+    margin-top: 360%;
+    color: rgb(179, 178, 178);
+    text-align: center;
+    
+
+    
+  }
+  
+  
+
+  /* Keyframes for fading animation */
+  @keyframes swipe-up {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  } 
+  
+  /* Animation for splash screen */
+  #splash-screen {
+    animation-name:swipe-up;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    
+
+  }  
+   
+/* Add loading spinner styles */
+.loading-spinner {
+  border: 10px solid rgba(19, 19, 19, 0.3); /* Spinner border color */ 
+  border-top: 10px solid black; /* Spinner top border color */ 
+  border-radius: 50%; /* Makes the spinner circular */
+  width: 100px; /* Spinner width */ 
+  height: 100px;/* Spinner height */
+  animation: spin 1s linear infinite; /* Spinner animation */ 
+  position: absolute;
+  bottom: 50px; /* Adjust the bottom position as needed */ 
+  margin-left: 90%; /* Move the spinner to the center horizontally */ 
+  transform: translateX(-50%);
+  background-image: url(../images/bird.jpg);
+  background-size:contain;
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); } /* Initial rotation */
+  100% { transform: rotate(360deg); }  /*Rotate full circle  */
+} 

@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.heading{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 60px;
+    background-image: url(../images/image_45.jpg);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+}
+
+.headingText{
+    font-family: "Poppins", sans-serif;
+    text-shadow: 3px 3px 3px black;
+}
+
+.change{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.font{
+    margin-left: 30px;
+}
+
+.color{
+    display: flex;
+    margin-right: 30px;
+}
+
+form{
+    padding-top: 5px;
+}
+
+#button{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+button{
+    font-size: 18px;
+    padding: 8px;
+    background-color: white;
+    border: 1px solid white;
+    transition: 0.6s;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+img{
+    width: 275px;
+    height: 200px;
+}
+
+.image{
+    display: inline;
+    padding: 10px 5px;
+}
+
+.imageContainer{
+    background-color: rgba(52, 52, 52, 0.521);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.imageContainer h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+.image img:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: 0.3s;
+
+}
+
+#pic1Para,#pic2Para,#pic3Para,#pic4Para,#pic5Para,#pic6Para{
+   display: none;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.links:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.largeImage{
+    display: none;
+    height: auto;
+    padding: 100px 150px;
+}
+
+#expandedImage{
+    border: 2px #fff solid;
+    width: 400px;
+    height: 300px;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+#description{
+    color: white;
+    font-size: 18px;
+    width: 60%;
+    float: left;
+    text-align: justify;
+    padding-right: 50px;
+}
+
+#description h3{
+    padding: 10px 0;
+}

@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+    }
+    
+    .heading{
+    text-align: center;
+    padding-top: 300px;
+    font-size: 60px;
+    background-image: url(../images/image_69.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    color: white;
+    }
+    
+    .Sitemap{
+    font-weight:bold;
+    font-size: 16px;
+    }
+    
+    /* Styles for the lines */
+    line {
+    stroke: white;
+    stroke-width: 2;
+    }
+    
+    /* Styles for the nodes */
+    #title rect {
+    fill: #7CB342;
+    transition: fill 0.3s;
+    }
+    
+    #home rect,#gallery rect,#shop rect,#profile rect,#feedback rect,#aboutus rect {
+    fill: #dcd427;
+    transition: fill 0.3s;
+    }
+    
+    #contentpg1, #contentpg3, #aboutus-1, #aboutus-3, #contentpg2, #contentpg4, #aboutus-2, #aboutus-4 {
+    fill: #0092cc;
+    transition: fill 0.3s;
+    }
+    
+    /* Hover styles for nodes */
+    #title rect:hover{
+    fill: #ffffff;
+    cursor: pointer;
+    }
+    
+    #home rect:hover, #gallery rect:hover, #shop rect:hover, #profile rect:hover, #feedback rect:hover, #aboutus rect:hover {
+    fill: #ffffff;
+    cursor: pointer;
+    }
+    
+    #contentpg1 rect:hover, #contentpg3 rect:hover, #aboutus-1 rect:hover, #aboutus-3 rect:hover,
+    #contentpg2 rect:hover, #contentpg4 rect:hover, #aboutus-2 rect:hover, #aboutus-4 rect:hover {
+    fill: #ffffff;
+    cursor: pointer;
+    }
+    
